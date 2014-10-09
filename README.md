@@ -1,16 +1,23 @@
 Skeleton_RGBDepth_DataAcquisition
 =================================
 
+Languages Used: C++
+Concepts Used: Image Processing, Multi-threading, Object-oriented programming, File I/O
+
 Written By: Adam Li C2014
 
 Collects Skeleton Data and Saves Color and Depth Image Streams. Collects all 20 skeleton joints and saves x,y,z coordinate data into a csv file that is saved into the local folder. Will also save color and depth images into local 'Color' and 'Depth' Image folders, for post digital-processing. 
 
 A slight filter/smoothing algorithm is applied for the skeleton joints.
 
+Uses OpenCV to create Mat objects for each image frame, and then saves the Mat as a .bmp image, instead of .png to save processing time (compression of png images). 
+
+------------------------------------------------------------------------------------------------------------------------------
+
 *This will require an i7 processor with a decent amount of RAM and SSD preferred to handle the image saving at 30fps...
 
 
-Standard Operating Procedure:
+Standard Operating Procedure To Setup:
 Downloads and Setup:
 •	Requires Windows and i7 and preferred SSD, or 5400 RPM HDD (uses heavy computation)
 •	Download VS 2010 C#, C++, or entire package. Download VS 2013 entire package for Windows Desktop.
